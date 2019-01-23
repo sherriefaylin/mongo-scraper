@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en-us">
+  <head>
+    <meta charset="UTF-8">
+    <title>Mongo Scraper</title>
+      <script src="https://code.jquery.com/jquery.js"></script>
+      <link rel="stylesheet" type="text/css" href="css/style.css">
+      <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css">
+      <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js"></script>
+  </head>
+  <body>
+    <div class="container">
+      <div class="row" id=menu-bar>
+          <div class="col-md-6">
+            <div class="row">
+              <div class="col-md-4" id="ms"><h4>MONGO SCRAPER</h4></div>
+              <div class="col-md-2" id="home">HOME</div>
+              <div class="col-md-3" id="savedArticles">SAVED ARTICLES</div>
+              <div class="col-md-3" id="btn-holder">
+                <button type="button" class="btn btn-danger" data-toggle="modal" data-target="#exampleModal" id="scrape">SCRAPE</button>
+              </div>
+            </div>
+          </div>
+        <div class="col-md-6"></div>
+      </div>
+
+      <div class="row" id="imageHolder">
+        <div class="col-lg-12" id="page-name">
+          <div class="row" id="page-title">
+            <span id="page-title1" style="font-size:80px;">M</span><span id="page-title2" style="font-size:60px;">ONGO</span> <span id="page-title3" style="font-size:80px;"> S</span><span id="page-title4" style="font-size:60px;">CRAPER</span>
+          </div>
+          <div class="row">
+            <h2>THE NEW YORK TIMES</h2>
+          </div>
+        </div>
+      </div> 
+      <br>
+
+      <div class="row">
+        <div id="headings"><h1>NO SCRAPED ARTICLES</h1></div>
+        <table class="table table-striped" id="nyt-articles">
+      <thead >
+        <tr>
+          <th scope="col">TITLE</th>
+          <th scope="col">BLURB</th>
+          <th scope="col"></th>
+          <th scope="col"></th>
+        </tr>
+      </thead>
+      <tbody>
+
+      </tbody>
+    </table>
+      </div>
+
+    <div class="modal fade" id="exampleModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+      <div class="modal-dialog" role="document">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h5 class="modal-title" id="exampleModalLabel">Articles Scraped</h5>
+            <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+              <span aria-hidden="true">&times;</span>
+            </button>
+          </div>
+          <div class="modal-body">
+             SCRAPED: 19 ARTICLES
+          </div>
+          <div class="modal-footer">
+            <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="modal fade" id="comment" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true" data-article-id="my_id_value">
+      <div class="modal-dialog" role="document">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h5 class="modal-title" id="exampleModalLabel">Notes</h5>
+            <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+              <span aria-hidden="true">&times;</span>
+            </button>
+          </div>
+
+          <div class="modal-body comment_list">  
+          </div>
+
+          <form>
+            <fieldset>
+              <textarea style="margin:7px;" id = "myTextArea"
+                      rows = "3"
+                      cols = "80">Your text here
+              </textarea>
+            </fieldset>
+          </form>
+
+          <div class="modal-footer">
+            <button type="button" class="btn btn-primary saveComments" >Save changes</button>
+            <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <script src="app.js" type="text/javascript"></script>
+  </body>
+</html>
