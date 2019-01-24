@@ -137,5 +137,5 @@ app.delete("/comment/:id", function(req, res){
 
 
 app.listen(port, function() {
-  console.log("App running on port " + port + "!");
+  console.log("App running on port " + port);
 });

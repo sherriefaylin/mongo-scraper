@@ -22,7 +22,6 @@
 
 #imageHolder{
   border: 1px solid black;
-  /* background-image: url("../images/scrapeArticles.png"); */
   background-size: cover;
   height:100%;
   padding:200px;

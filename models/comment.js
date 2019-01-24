@@ -9,4 +9,3 @@ var CommentSchema = new Schema({
 var Comment = mongoose.model("Comment", CommentSchema);
 
 module.exports = Comment;
-//comment
