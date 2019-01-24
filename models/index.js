@@ -1,5 +1,5 @@
 
 module.exports = {
-  Article: require("./Article"),
+  article: require("./article"),
   Comment: require("./comment")
 };
