@@ -1,54 +1,61 @@
 <!DOCTYPE html>
 <html lang="en-us">
-  <head>
-    <meta charset="UTF-8">
-    <title>Mongo Scraper</title>
-      <script src="https://code.jquery.com/jquery.js"></script>
-      <link rel="stylesheet" type="text/css" href="css/style.css">
-      <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css">
-      <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js"></script>
-  </head>
-  <body>
-    <div class="container">
-      <div id=menu-bar>
-          <div class="col-md-6">
-              <div id="ms"><h4>MONGO SCRAPER</h4></div>
-              <div id="home">HOME</div>
-              <div  id="savedArticles">SAVED ARTICLES</div>
-              <div  id="btn-holder">
-                <button type="button"  id="scrape">SCRAPE</button>
-            </div>
-          </div>
 
-      </div>
+<head>
+  <meta charset="UTF-8">
+  <title>MONGO SCRAPER</title>
+  <script src="https://code.jquery.com/jquery.js"></script>
+  <link rel="stylesheet" type="text/css" href="css/style.css">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css">
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js"></script>
+</head>
 
-        <div  id="page-name">
-          <div id="page-title">
-            <div id= "page-title">MONGO SCRAPER</div>
-          </div>
-            <h3>THE NEW YORK TIMES</h3>
-
+<body>
+  <div class="container">
+    <div id=menu-bar>
+      <div class="col-md-6">
+        <div id="ms">
+          <h4>MONGO SCRAPER</h4>
         </div>
-      </div> 
-      <br>
-
-        <div id="headings"><h1>NO SCRAPED ARTICLES</h1></div>
-        <table class="table " id="nyt-articles">
-      <thead >
-        <tr>
-          <th >TITLE</th>
-          <th >BLURB</th>
-
-        </tr>
-      </thead>
-      <tbody>
-
-      </tbody>
-    </table>
+        <div id="home">HOME</div>
+        <div id="savedArticles">SAVED ARTICLES</div>
+        <div id="btn-holder">
+          <button type="button" id="scrape">SCRAPE</button>
+        </div>
       </div>
 
-    <script src="app.js" type="text/javascript"></script>
-  </body>
+    </div>
+
+    <div id="page-name">
+      <div id="page-title">
+        <div id="page-title">MONGO SCRAPER</div>
+      </div>
+      <h3>THE NEW YORK TIMES</h3>
+
+    </div>
+  </div>
+  <br>
+
+  <div id="headings">
+    <h1> SCRAPED ARTICLES</h1>
+  </div>
+  <table class="table " id="nyt-articles">
+    <thead>
+      <tr>
+        <th>TITLE</th>
+        <th>BLURB</th>
+
+      </tr>
+    </thead>
+    <tbody>
+
+    </tbody>
+  </table>
+  </div>
+
+  <script src="app.js" type="text/javascript"></script>
+</body>
+
 </html>
 
 
@@ -60,7 +67,7 @@
 
 
 
-    <!-- <div class="modal fade" id="exampleModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+<!-- <div class="modal fade" id="exampleModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
       <div class="modal-dialog" role="document">
         <div class="modal-content">
           <div class="modal-header">

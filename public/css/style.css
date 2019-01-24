@@ -2,29 +2,22 @@
   background-color: rgba(0, 0, 0, 0.537);
   border: 1px solid black
 }
-#ms{
-  color:white;
-  padding:10px;
-}
+
 #home{
-  padding: 20px;
+  padding: 25px;
   color:white;
 }
 
 #savedArticles{
-  padding:20px;
+  padding:30px;
   color:white;
 }
 
 #btn-holder{
   padding:10px;
-}
-
-#imageHolder{
   border: 1px solid black;
-  background-size: cover;
-  height:100%;
-  padding:200px;
+  color: black;
+  background-color: white;
 }
 
 #nyt-title{
